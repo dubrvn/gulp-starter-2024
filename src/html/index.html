@@ -4,12 +4,13 @@
 	<meta charset="UTF-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<title>Document</title>
+	<link rel="stylesheet" href="css/main.min.css">
 </head>
 <body>
 
-	@@include("chunk/header.html")
+	<header class="header"> Шапка сайта</header>
 
-	<h1>Главная cтраница</h1>
+	<h1 class="title">Главная cтраница!!!!!!!!!!</h1>
 
 	@@loop("chunk/news-item.html", "../../data/news.json")
 

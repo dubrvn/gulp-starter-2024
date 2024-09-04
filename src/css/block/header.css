@@ -1,0 +1,10 @@
+header {
+	font-weight: bolder;
+	color: blueviolet;
+}
+
+@media (max-width: 700px) {
+	.header {
+		color: red;
+	}
+}
