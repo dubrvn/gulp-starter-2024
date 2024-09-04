@@ -1,0 +1,1 @@
+!function(){var o={184:function(o){o.exports=(o,r)=>o+r}},r={};const n=function n(t){var e=r[t];if(void 0!==e)return e.exports;var s=r[t]={exports:{}};return o[t](s,s.exports,n),s.exports}(184);console.log(n(2,10)),console.log(n(12,5))}();

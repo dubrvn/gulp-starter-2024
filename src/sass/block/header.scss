@@ -1,0 +1,9 @@
+header {
+	font-weight: bolder;
+	color: blueviolet;
+
+	@include ph {
+		color: red;
+	}
+}
+

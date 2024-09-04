@@ -1,0 +1,11 @@
+.title {
+	text-transform: uppercase;
+	display: flex;
+	flex-direction: row;
+
+	@include ph {
+		text-align: center;
+	}
+	
+}
+

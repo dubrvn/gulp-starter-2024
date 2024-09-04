@@ -1,0 +1,32 @@
+$base-font-size: 22px;
+
+@mixin ph {
+	@media (max-width: 700px) {
+		@content
+	}
+}
+
+
+* {
+	box-sizing: border-box;
+}
+
+body {
+	font-size: $base-font-size;
+	font-family: Arial;
+	line-height: 1.5;
+
+	@include ph {
+			color: white;
+			background-color: black;
+	}
+
+}
+
+
+
+
+@import "block/header.scss";
+
+@import "block/title.scss";
+
