@@ -12,6 +12,7 @@ const csso = require("gulp-csso");
 const rename = require("gulp-rename");
 const groupCssMedia = require("gulp-group-css-media-queries");
 const sass = require("gulp-sass")(require("sass"));
+const webpcss = require("gulp-webp-css");
 
 
 
@@ -27,6 +28,7 @@ const scss = () => {
 		}))
 	}))
 	.pipe(sass())
+	.pipe(webpcss())
 	.pipe(autoprefixer())
 	.pipe(groupCssMedia())
 	.pipe(dest(path.scss.dest, {sourcemaps: true}))

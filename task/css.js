@@ -13,6 +13,8 @@ const autoprefixer = require("gulp-autoprefixer");
 const csso = require("gulp-csso");
 const rename = require("gulp-rename");
 const groupCssMedia = require("gulp-group-css-media-queries");
+const webpcss = require("gulp-webp-css");
+
 
 
 
@@ -28,6 +30,7 @@ const css = () => {
 	}))
 	.pipe(concat("main.css"))
 	.pipe(cssimport())
+	.pipe(webpcss())
 	.pipe(autoprefixer())
 	.pipe(groupCssMedia())
 	.pipe(dest(path.css.dest, {sourcemaps: true}))

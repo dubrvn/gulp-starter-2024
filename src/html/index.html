@@ -10,12 +10,18 @@
 <body>
 
 	<header class="header"> Шапка сайта</header>
+	
+	<h1 class="title">Главная cтраница</h1>
 
-	<h1 class="title">Главная cтраница!!!!!!!!!!</h1>
-
+	
+	
 	@@loop("chunk/news-item.html", "../../data/news.json")
 
 	@@include("chunk/footer.html")
-	
+
+  	<img src="../img/bg.png" alt="Бекграунд">
+
+	<img src="../img/photo.jpg" alt="Пёс Пукля на лежаночке">
+
 </body>
 </html>
